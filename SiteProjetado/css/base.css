@@ -1,0 +1,33 @@
+/* ===== Cores do site (branco, verde e bege) ===== */
+:root {
+  --branco: #ffffff;
+  --bege: #f3ecdc;
+  --verde: #2f6f4f;
+  --texto: #2b2b2b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bege);
+  color: var(--texto);
+  line-height: 1.5;
+}
+
+/* Topo e menu */
+header {
+  background: var(--verde);
+  color: var(--branco);
+  padding: 16px 24px;
+}
+header h1 { margin: 0; font-size: 1.5rem; }
+nav a { color: var(--branco); margin-right: 16px; }
+
+/* Área de conteúdo */
+main {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 0 16px;
+}

@@ -1,0 +1,47 @@
+/* Caixa branca usada em formulários e animais */
+.caixa {
+  background: var(--branco);
+  border: 2px solid var(--verde);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+/* Formulário */
+label { display: block; margin-top: 12px; font-weight: bold; }
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--verde);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Botões (servem para <button> e <a>) */
+.botao {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 18px;
+  background: var(--verde);
+  color: var(--branco);
+  border: 2px solid var(--verde);
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.botao.claro { background: var(--branco); color: var(--verde); }
+
+/* Mensagens */
+.aviso {
+  background: var(--bege);
+  border-left: 6px solid var(--verde);
+  padding: 12px;
+  margin-top: 16px;
+}
+.erro { color: #a12622; font-weight: bold; min-height: 1.4em; }
+
+/* Detalhes */
+.opcao { font-weight: normal; }
+.opcao input { width: auto; margin-right: 6px; }
+.verde { color: var(--verde); }
