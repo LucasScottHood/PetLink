@@ -3,24 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PetLink</title>
-  <link rel="stylesheet" href="style.css">
+  <title>PetLink - Entrar</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/componentes.css">
 </head>
 <body>
   <header><h1>PetLink</h1></header>
 
   <main>
-    <form class="caixa" action="catalogo.html">
+    <form class="caixa" id="formLogin" novalidate>
       <h2>Acesse sua conta</h2>
 
       <label for="email">E-mail</label>
-      <input id="email" type="email" required>
+      <input id="email" type="email">
 
       <label for="senha">Senha</label>
-      <input id="senha" type="password" required>
+      <input id="senha" type="password">
 
+      <p class="erro" id="erro" role="alert"></p>
       <button class="botao" type="submit">Entrar</button>
+      <p>Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
     </form>
   </main>
+
+  <script src="js/dados.js"></script>
+  <script src="js/auth.js"></script>
 </body>
 </html>
