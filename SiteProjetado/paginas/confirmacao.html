@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PetLink - Confirmação</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/componentes.css">
+</head>
+<body>
+  <header>
+    <h1>PetLink</h1>
+    <nav>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="cadastrar-pet.html">Cadastrar pet</a>
+      <a href="confirmacao.html">Meu compromisso</a>
+      <a href="#" id="sair">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="caixa">
+      <h2>Seu compromisso</h2>
+
+      <div id="resumo"></div>
+
+      <div class="aviso">Aceite para reservar o pet ou cancele o compromisso.</div>
+
+      <a class="botao" href="#" id="aceitar">Aceitar</a>
+      <a class="botao claro" href="#" id="cancelar">Cancelar</a>
+      <a class="botao claro" href="catalogo.html">Voltar ao catálogo</a>
+    </section>
+  </main>
+
+  <script src="../js/dados.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>Auth.exigirLogin();</script>
+  <script src="../js/compromisso.js"></script>
+</body>
+</html>

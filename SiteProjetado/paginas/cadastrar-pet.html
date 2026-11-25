@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PetLink - Cadastrar pet</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/componentes.css">
+</head>
+<body>
+  <header>
+    <h1>PetLink</h1>
+    <nav>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="cadastrar-pet.html">Cadastrar pet</a>
+      <a href="confirmacao.html">Meu compromisso</a>
+      <a href="#" id="sair">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <form class="caixa" id="formPet" novalidate>
+      <h2>Cadastre seu pet</h2>
+
+      <label for="especie">Espécie</label>
+      <select id="especie">
+        <option value="cao">Cão</option>
+        <option value="gato">Gato</option>
+        <option value="ave">Ave doméstica</option>
+      </select>
+
+      <label for="raca">Raça</label>
+      <input id="raca">
+
+      <label for="sexo">Sexo</label>
+      <select id="sexo">
+        <option>Macho</option>
+        <option>Fêmea</option>
+      </select>
+
+      <label for="localizacao">Localização</label>
+      <input id="localizacao" placeholder="Ex.: Pelotas - RS">
+
+      <p>Código: <strong class="verde">gerado automaticamente</strong></p>
+
+      <label for="tamanho">Tamanho</label>
+      <select id="tamanho">
+        <option>Pequeno</option>
+        <option>Médio</option>
+        <option>Grande</option>
+      </select>
+
+      <label for="alergias">Alergias (opcional)</label>
+      <input id="alergias">
+
+      <label for="doencas">Doenças (opcional)</label>
+      <input id="doencas">
+
+      <p class="erro" id="erro" role="alert"></p>
+      <button class="botao" type="submit">Cadastrar pet</button>
+      <a class="botao claro" href="catalogo.html">Cancelar</a>
+    </form>
+  </main>
+
+  <script src="../js/dados.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>Auth.exigirLogin();</script>
+  <script src="../js/catalogo.js"></script>
+</body>
+</html>

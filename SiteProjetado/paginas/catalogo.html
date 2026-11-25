@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PetLink - Catálogo</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/componentes.css">
+</head>
+<body>
+  <header>
+    <h1>PetLink</h1>
+    <nav>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="cadastrar-pet.html">Cadastrar pet</a>
+      <a href="confirmacao.html">Meu compromisso</a>
+      <a href="#" id="sair">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Pets para adoção</h2>
+    <!-- Os pets são montados por js/catalogo.js -->
+    <div id="listaPets"></div>
+  </main>
+
+  <script src="../js/dados.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>Auth.exigirLogin();</script>
+  <script src="../js/catalogo.js"></script>
+</body>
+</html>

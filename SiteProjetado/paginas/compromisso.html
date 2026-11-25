@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PetLink - Compromisso</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/componentes.css">
+</head>
+<body>
+  <header>
+    <h1>PetLink</h1>
+    <nav>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="cadastrar-pet.html">Cadastrar pet</a>
+      <a href="confirmacao.html">Meu compromisso</a>
+      <a href="#" id="sair">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <form class="caixa" id="formCompromisso" novalidate>
+      <h2>Agendar compromisso</h2>
+      <p>Pet escolhido: <strong id="nomePet"></strong></p>
+
+      <label for="data">Data</label>
+      <input id="data" type="date">
+
+      <label for="horario">Horário</label>
+      <select id="horario">
+        <option>09:00</option>
+        <option>14:00</option>
+        <option>16:00</option>
+      </select>
+
+      <p class="erro" id="erro" role="alert"></p>
+      <button class="botao" type="submit">Agendar</button>
+      <a class="botao claro" href="catalogo.html">Cancelar</a>
+    </form>
+  </main>
+
+  <script src="../js/dados.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>Auth.exigirLogin();</script>
+  <script src="../js/catalogo.js"></script>
+  <script src="../js/compromisso.js"></script>
+</body>
+</html>
